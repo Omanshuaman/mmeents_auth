@@ -1,38 +1,618 @@
-.App {
-  text-align: center;
+.header {
+  width: 100%;
+  height: 10%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar-heropage {
+  display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 20%;
+  margin-left: 5%;
+  margin-top: 5%;
+  gap: 30px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+  padding: 2%;
+  margin-left: 45px;
+  width: 74px;
+  height: 16px;
+}
+.settings-text {
+  width: 50px;
+  height: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #979b99;
+}
+.settings-svg {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 10px;
+}
+.divider-svg {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+.account {
+  width: 69px;
+  height: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  text-transform: uppercase;
+
+  /* Neutral 60 */
+
+  color: #979b99;
+}
+.personal-information {
+  width: 150px;
+  height: 16px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #646866;
+}
+.heropage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 40px;
+
+  width: 588px;
+  height: 543.56px;
+}
+.personal-information-text {
+  width: 240px;
+  height: 34px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #0d0d0d;
+}
+.validation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  width: 588px;
+  height: 469.56px;
+}
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+
+  width: 311.56px;
+  height: 91.56px;
+}
+.full-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 588px;
+  height: 96px;
+}
+.email-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 588px;
+  height: 118px;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-picture-text {
+  width: 123px;
+  height: 24px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+.profile-pic-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 14px;
+
+  width: 311.56px;
+  height: 53.56px;
+}
+.profile-pic-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7.77778px;
+  gap: 15.56px;
+
+  width: 55.56px;
+  height: 53.56px;
+  background: #39c6a4;
+  border-radius: 12.4444px;
+}
+.profile-pic-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 242px;
+  height: 44px;
+}
+.profile-pic-logotext {
+  width: 40px;
+  height: 38px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #ffffff;
+}
+.profile-pic-upload-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 13px;
+  gap: 10px;
+  width: 71px;
+  height: 24px;
+  background: #d7f3ed;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.profile-pic-text {
+  width: 242px;
+  height: 10px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  color: #979b99;
+}
+.prifile-pic-upload-text {
+  /* Upload */
+  width: 45px;
+  height: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+.full-name-text {
+  width: 87px;
+  height: 24px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #333333;
+}
+.name-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 588px;
+  height: 62px;
+}
+.first-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+  width: 282px;
+  height: 62px;
+}
+.last-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+  width: 282px;
+  height: 62px;
+}
+.first-name-text {
+  width: 55px;
+  height: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  color: #979b99;
+}
+.first-name-input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 80px 12px 16px;
+  gap: 10px;
+  width: 282px;
+  height: 40px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+.email-name-text {
+  width: 127px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #333333;
+}
+.email {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 588px;
+  height: 84px;
+}
+.primary-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+  width: 282px;
+  height: 84px;
+}
+.secondary-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+  width: 282px;
+  height: 84px;
+}
+.primary-email-inputfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+  width: 282px;
+  height: 62px;
+}
+.primary-email-change {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  width: 172px;
+  height: 16px;
+}
+.primary-email-text {
+  width: 100%;
+  height: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  color: #979b99;
+}
+.primary-email-input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 80px 12px 16px;
+  gap: 10px;
+  width: 282px;
+  height: 40px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+.primary-email-change {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  width: 100%;
+  height: 16px;
+}
+.change-email {
+  width: 76px;
+  height: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  color: #39c6a4;
+  cursor: pointer;
+}
+.change-password {
+  width: 106px;
+  height: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  color: #39c6a4;
+}
+.change-secondary-email {
+  width: 100%;
+  height: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  color: #39c6a4;
+}
+.mobile-number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 427px;
+  height: 74px;
+}
+.mobile-number-text {
+  width: 172px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+.mobile-number-input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 427px;
+  height: 40px;
+}
+.mobile-number-inputfield {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 313px;
+  height: 40px;
+}
+.submit-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+
+  width: 90px;
+  height: 40px;
+
+  background: #071814;
+  border-radius: 8px;
+}
+.dropdown-number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+
+  width: 63px;
+  height: 40px;
+  background: #ededed;
+  border-radius: 4px;
+}
+.phonenumber {
+  box-sizing: border-box;
+  width: 240px;
+  height: 40px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+body.active-modal {
+  overflow-y: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.popup {
+  position: absolute;
+  width: 770px;
+  height: 411px;
+  left: 425px;
+  top: 227px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.close-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 14px;
+  cursor: pointer;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 708px;
+  top: 42px;
+}
+.change-email-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+
+  position: absolute;
+  width: 667px;
+  height: 317px;
+  left: 51px;
+  top: 30px;
+}
+.change-email-text {
+  width: 163px;
+  height: 34px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #333333;
+}
+.change-email-inputfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 40px;
+
+  width: 667px;
+  height: 253px;
+}
+.email-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 25px;
+
+  width: 667px;
+  height: 173px;
+}
+.email-submit {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 200px;
+  height: 40px;
+}
+.new-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 667px;
+  height: 74px;
+}
+.current-password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 667px;
+  height: 74px;
+}
+.new-email-text {
+  width: 104px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+.new-email-field {
+  box-sizing: border-box;
+
+  width: 667px;
+  height: 40px;
+
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
